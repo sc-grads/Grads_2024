@@ -21,7 +21,7 @@
         },
         "environments": {
           "PROD": {
-            "workspace": "Grads_2024"
+            "workspace": "Report DevOps Env"
           }
         }
       }
