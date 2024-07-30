@@ -4,6 +4,8 @@ name: Deployment
 on:
   push:
     branches: [ main ]
+    paths:
+      - 'PowerBIProjects/**'
 
 env:
   PROFILE: Files
