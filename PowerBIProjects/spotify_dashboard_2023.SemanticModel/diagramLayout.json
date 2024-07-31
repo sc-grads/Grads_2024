@@ -1,0 +1,61 @@
+{
+  "version": "1.1.0",
+  "diagrams": [
+    {
+      "ordinal": 0,
+      "scrollPosition": {
+        "x": 0,
+        "y": 0
+      },
+      "nodes": [
+        {
+          "location": {
+            "x": 440,
+            "y": 19
+          },
+          "nodeIndex": "Spotify_Dataset",
+          "nodeLineageTag": "36235c27-d341-4b48-b100-48bf4003972b",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 1
+        },
+        {
+          "location": {
+            "x": 777,
+            "y": 15
+          },
+          "nodeIndex": "Date",
+          "nodeLineageTag": "6abb3a26-3e9b-410f-87d7-fc5d26ff0519",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 3
+        },
+        {
+          "location": {
+            "x": 81,
+            "y": 431
+          },
+          "nodeIndex": "DateAutoTemplate",
+          "nodeLineageTag": "112e8ebc-bc01-4787-95c5-4418a638b4ae",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 2
+        }
+      ],
+      "name": "All tables",
+      "zoomValue": 100,
+      "pinKeyFieldsToTop": false,
+      "showExtraHeaderInfo": false,
+      "hideKeyFieldsWhenCollapsed": false,
+      "tablesLocked": false
+    }
+  ],
+  "selectedDiagram": "All tables",
+  "defaultDiagram": "All tables"
+}

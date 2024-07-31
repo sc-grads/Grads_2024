@@ -1,0 +1,9 @@
+{
+  "version": "4.0",
+  "datasetReference": {
+    "byPath": {
+      "path": "../spotify_dashboard_2023.SemanticModel"
+    },
+    "byConnection": null
+  }
+}

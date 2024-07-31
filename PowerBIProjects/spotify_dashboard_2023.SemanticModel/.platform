@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "SemanticModel",
+    "displayName": "spotify_dashboard_2023"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "096d0386-adaf-4357-8431-c788fb1c490b"
+  }
+}
