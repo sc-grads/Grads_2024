@@ -1,0 +1,137 @@
+{
+  "name": "323f65a2bb08dc53754a",
+  "layouts": [
+    {
+      "id": 0,
+      "position": {
+        "x": 385.55555555555554,
+        "y": 592.22222222222217,
+        "z": 1000,
+        "width": 476.66666666666663,
+        "height": 248.88888888888889,
+        "tabOrder": 1000
+      }
+    }
+  ],
+  "singleVisual": {
+    "visualType": "clusteredBarChart",
+    "projections": {
+      "Category": [
+        {
+          "queryRef": "Spotify_Dataset.track_name",
+          "active": true
+        }
+      ],
+      "Y": [
+        {
+          "queryRef": "Sum(Spotify_Dataset.streams)"
+        }
+      ]
+    },
+    "prototypeQuery": {
+      "Version": 2,
+      "From": [
+        {
+          "Name": "s",
+          "Entity": "Spotify_Dataset",
+          "Type": 0
+        }
+      ],
+      "Select": [
+        {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Source": "s"
+              }
+            },
+            "Property": "track_name"
+          },
+          "Name": "Spotify_Dataset.track_name",
+          "NativeReferenceName": "track_name"
+        },
+        {
+          "Aggregation": {
+            "Expression": {
+              "Column": {
+                "Expression": {
+                  "SourceRef": {
+                    "Source": "s"
+                  }
+                },
+                "Property": "streams"
+              }
+            },
+            "Function": 0
+          },
+          "Name": "Sum(Spotify_Dataset.streams)",
+          "NativeReferenceName": "Sum of streams"
+        }
+      ],
+      "OrderBy": [
+        {
+          "Direction": 2,
+          "Expression": {
+            "Aggregation": {
+              "Expression": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Source": "s"
+                    }
+                  },
+                  "Property": "streams"
+                }
+              },
+              "Function": 0
+            }
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true,
+    "objects": {
+      "categoryAxis": [
+        {
+          "properties": {
+            "showAxisTitle": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "valueAxis": [
+        {
+          "properties": {
+            "showAxisTitle": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "vcObjects": {
+      "title": [
+        {
+          "properties": {
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Tracks by #Streams'"
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

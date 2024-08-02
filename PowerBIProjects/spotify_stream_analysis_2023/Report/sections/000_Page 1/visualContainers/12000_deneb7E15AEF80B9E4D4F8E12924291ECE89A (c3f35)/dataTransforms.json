@@ -1,0 +1,232 @@
+{
+  "objects": {
+    "display": [
+      {
+        "properties": {}
+      }
+    ],
+    "vega": [
+      {
+        "properties": {
+          "provider": {
+            "expr": {
+              "Literal": {
+                "Value": "'vegaLite'"
+              }
+            }
+          },
+          "jsonSpec": {
+            "expr": {
+              "Literal": {
+                "Value": "'{\r\n  \"$schema\": \"https://vega.github.io/schema/vega-lite/v5.json\",\r\n  \"usermeta\": {\r\n    \"deneb\": {\r\n      \"build\": \"1.4.0.0\",\r\n      \"metaVersion\": 1,\r\n      \"provider\": \"vegaLite\",\r\n      \"providerVersion\": \"5.4.0\"\r\n    },\r\n    \"interactivity\": {\r\n      \"tooltip\": true,\r\n      \"contextMenu\": true,\r\n      \"selection\": true,\r\n      \"highlight\": true,\r\n      \"dataPointLimit\": 50\r\n    },\r\n    \"information\": {\r\n      \"name\": \"heatmap with bars - themed\",\r\n      \"description\": \"Heatmap, uses the 5th theme color as bar chart, 8th color for font, and sentiment colors for gradient. X and Y axis are using Date table from Bravo, and are sorted for X= Month, Y = Day of Week. If you are using a different ordinal column, please make sure the columns are properly sorted\",\r\n      \"author\": \"Injae Park\",\r\n      \"uuid\": \"57ee5f3a-4a51-4230-8885-7db391a05805\",\r\n      \"generated\": \"2022-10-19T11:12:58.962Z\"\r\n    },\r\n    \"dataset\": [\r\n      {\r\n        \"key\": \"Day of Week\",\r\n        \"name\": \"Day of Week\",\r\n        \"description\": \"From Bravo, is 3 character abbreviation, i.e. Mon, Tue, Wed\",\r\n        \"type\": \"text\",\r\n        \"kind\": \"column\"\r\n      },\r\n      {\r\n        \"key\": \"Month\",\r\n        \"name\": \"Month\",\r\n        \"description\": \"From Bravo, is 3 character abbreviation, i.e. Jan, Feb, Mar\",\r\n        \"type\": \"text\",\r\n        \"kind\": \"column\"\r\n      },\r\n      {\r\n        \"key\": \"_Track\",\r\n        \"name\": \"_Track\",\r\n        \"description\": \"\",\r\n        \"type\": \"numeric\",\r\n        \"kind\": \"measure\"\r\n      }\r\n    ]\r\n  },\r\n  \"config\": {\r\n    \"autosize\": {\r\n      \"type\": \"fit\",\r\n      \"contains\": \"padding\"\r\n    },\r\n    \"view\": {\"stroke\": \"transparent\"}\r\n  },\r\n  \"data\": {\"name\": \"dataset\"},\r\n  \"spacing\": 15,\r\n  \"bounds\": \"flush\",\r\n  \"vconcat\": [\r\n    {\r\n      \"height\": 20,\r\n      \"width\" : {\"step\":20},\r\n      \"mark\": {\r\n        \"type\": \"bar\",\r\n        \"stroke\": null,\r\n        \"cornerRadiusEnd\": 4,\r\n        \"tooltip\": true,\r\n        \"color\": {\"expr\": \"pbiColor(4)\"}\r\n      },\r\n      \"encoding\": {\r\n        \"x\": {\r\n          \"field\": \"Month\",\r\n          \"sort\": [\r\n            \"Jan\",\r\n            \"Feb\",\r\n            \"Mar\",\r\n            \"Apr\",\r\n            \"May\",\r\n            \"Jun\",\r\n            \"Jul\",\r\n            \"Aug\",\r\n            \"Sep\",\r\n            \"Oct\",\r\n            \"Nov\",\r\n            \"Dec\"\r\n          ],\r\n          \"axis\": null\r\n        },\r\n        \"y\": {\r\n          \"field\": \"_Track\",\r\n          \"aggregate\": \"mean\",\r\n          \"axis\": null\r\n        }\r\n      }\r\n    },\r\n    {\r\n      \"spacing\": 15,\r\n      \"bounds\": \"flush\",\r\n      \"hconcat\": [\r\n        {\r\n          \"mark\": {\r\n            \"type\": \"rect\",\r\n            \"stroke\": \"white\",\r\n            \"tooltip\": true,\r\n            \"cornerRadius\": 6\r\n          },\r\n          \"width\" : {\"step\":20},\r\n          \"height\" : {\"step\":20},\r\n          \"encoding\": {\r\n            \"y\": {\r\n              \"field\": \"Day of Week\",\r\n              \"type\": \"ordinal\",\r\n              \"title\": \"\",\r\n              \"sort\": [\r\n                \"Mon\",\r\n                \"Tue\",\r\n                \"Wed\",\r\n                \"Thu\",\r\n                \"Fri\",\r\n                \"Sat\",\r\n                \"Sun\"\r\n              ],\r\n              \"axis\": {\r\n                \"domain\": false,\r\n                \"ticks\": false,\r\n                \"labels\": true,\r\n                \"labelAngle\": 0,\r\n                \"labelPadding\": 5,\r\n                \"labelColor\": {\r\n                  \"expr\": \"pbiColor(7)\"\r\n                }\r\n              }\r\n            },\r\n            \"x\": {\r\n              \"field\": \"Month\",\r\n              \"type\": \"ordinal\",\r\n              \"title\": \"\",\r\n              \"sort\": [\r\n                \"Jan\",\r\n                \"Feb\",\r\n                \"Mar\",\r\n                \"Apr\",\r\n                \"May\",\r\n                \"Jun\",\r\n                \"Jul\",\r\n                \"Aug\",\r\n                \"Sep\",\r\n                \"Oct\",\r\n                \"Nov\",\r\n                \"Dec\"\r\n              ],\r\n              \"axis\": {\r\n                \"domain\": false,\r\n                \"ticks\": false,\r\n                \"labels\": true,\r\n                \"labelAngle\": 0,\r\n                \"labelColor\": {\r\n                  \"expr\": \"pbiColor(7)\"\r\n                },\r\n                \"titleColor\": {\r\n                  \"expr\": \"pbiColor(7)\"\r\n                }\r\n              }\r\n            },\r\n            \"color\": {\r\n              \"aggregate\": \"mean\",\r\n              \"field\": \"_Track\",\r\n              \"type\": \"quantitative\",\r\n              \"title\": \"Orders\",\r\n              \"scale\": {\r\n                \"scheme\": \"pbiColorLinear\"\r\n              },\r\n              \"legend\": null\r\n            }\r\n          }\r\n        },\r\n        {\r\n          \"mark\": {\r\n            \"type\": \"bar\",\r\n            \"stroke\": null,\r\n            \"cornerRadiusEnd\": 4,\r\n            \"tooltip\": true,\r\n            \"color\": {\r\n              \"expr\": \"pbiColor(4)\"\r\n            }\r\n          },\r\n          \"width\": 20,\r\n          \"height\" : {\"step\":20},\r\n          \"encoding\": {\r\n            \"y\": {\r\n              \"field\": \"Day of Week\",\r\n              \"axis\": null,\r\n              \"sort\": [\r\n                \"mon\",\r\n                \"tue\",\r\n                \"wed\",\r\n                \"thu\",\r\n                \"fri\",\r\n                \"sat\",\r\n                \"sun\"\r\n              ]\r\n            },\r\n            \"x\": {\r\n              \"field\": \"_Track\",\r\n              \"type\": \"quantitative\",\r\n              \"aggregate\": \"mean\",\r\n              \"axis\": null\r\n            }\r\n          }\r\n        }\r\n      ]\r\n    }\r\n  ]\r\n}'"
+              }
+            }
+          },
+          "jsonConfig": {
+            "expr": {
+              "Literal": {
+                "Value": "'{}'"
+              }
+            }
+          },
+          "isNewDialogOpen": {
+            "expr": {
+              "Literal": {
+                "Value": "false"
+              }
+            }
+          },
+          "enableTooltips": {
+            "expr": {
+              "Literal": {
+                "Value": "true"
+              }
+            }
+          },
+          "enableContextMenu": {
+            "expr": {
+              "Literal": {
+                "Value": "true"
+              }
+            }
+          },
+          "enableHighlight": {
+            "expr": {
+              "Literal": {
+                "Value": "false"
+              }
+            }
+          },
+          "enableSelection": {
+            "expr": {
+              "Literal": {
+                "Value": "false"
+              }
+            }
+          },
+          "selectionMaxDataPoints": {
+            "expr": {
+              "Literal": {
+                "Value": "50D"
+              }
+            }
+          },
+          "version": {
+            "expr": {
+              "Literal": {
+                "Value": "'5.19.0'"
+              }
+            }
+          }
+        }
+      }
+    ],
+    "developer": [
+      {
+        "properties": {
+          "version": {
+            "expr": {
+              "Literal": {
+                "Value": "'1.7.0.0'"
+              }
+            }
+          }
+        }
+      }
+    ],
+    "stateManagement": [
+      {
+        "properties": {
+          "viewportHeight": {
+            "expr": {
+              "Literal": {
+                "Value": "217.77777777777777D"
+              }
+            }
+          },
+          "viewportWidth": {
+            "expr": {
+              "Literal": {
+                "Value": "273.3333333333333D"
+              }
+            }
+          }
+        }
+      }
+    ]
+  },
+  "projectionOrdering": {
+    "dataset": [
+      0,
+      1,
+      2
+    ]
+  },
+  "queryMetadata": {
+    "Select": [
+      {
+        "Restatement": "Day of Week",
+        "Name": "Date.Day of Week",
+        "Type": 2048
+      },
+      {
+        "Restatement": "Month",
+        "Name": "Date.Month",
+        "Type": 2048
+      },
+      {
+        "Restatement": "_Track",
+        "Name": "Spotify_Dataset._Track",
+        "Type": 3,
+        "Format": "0"
+      }
+    ]
+  },
+  "visualElements": [
+    {
+      "DataRoles": [
+        {
+          "Name": "dataset",
+          "Projection": 0,
+          "isActive": false
+        },
+        {
+          "Name": "dataset",
+          "Projection": 1,
+          "isActive": false
+        },
+        {
+          "Name": "dataset",
+          "Projection": 2,
+          "isActive": false
+        }
+      ]
+    }
+  ],
+  "selects": [
+    {
+      "displayName": "Day of Week",
+      "queryName": "Date.Day of Week",
+      "roles": {
+        "dataset": true
+      },
+      "type": {
+        "category": null,
+        "underlyingType": 1
+      },
+      "expr": {
+        "Column": {
+          "Expression": {
+            "SourceRef": {
+              "Entity": "Date"
+            }
+          },
+          "Property": "Day of Week"
+        }
+      }
+    },
+    {
+      "displayName": "Month",
+      "queryName": "Date.Month",
+      "roles": {
+        "dataset": true
+      },
+      "type": {
+        "category": "MonthOfYear",
+        "underlyingType": 1
+      },
+      "expr": {
+        "Column": {
+          "Expression": {
+            "SourceRef": {
+              "Entity": "Date"
+            }
+          },
+          "Property": "Month"
+        }
+      }
+    },
+    {
+      "displayName": "_Track",
+      "format": "0",
+      "queryName": "Spotify_Dataset._Track",
+      "roles": {
+        "dataset": true
+      },
+      "type": {
+        "category": null,
+        "underlyingType": 260
+      },
+      "expr": {
+        "Measure": {
+          "Expression": {
+            "SourceRef": {
+              "Entity": "Spotify_Dataset"
+            }
+          },
+          "Property": "_Track"
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,5273 @@
+﻿culture en-US
+
+	linguisticMetadata =
+			{
+			  "Version": "3.5.0",
+			  "Language": "en-US",
+			  "Entities": {
+			    "spotify_dataset": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Spotify_Dataset"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "spotify dataset": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Spotify_Dataset": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "spotify_dataset.track_name": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Spotify_Dataset",
+			          "ConceptualProperty": "track_name"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "track name": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "track_name": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "track nickname": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "track title": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "track label": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "track tag": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        }
+			      ]
+			    },
+			    "spotify_dataset.artists_name": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Spotify_Dataset",
+			          "ConceptualProperty": "artist(s)_name"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "artist(s)_name": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "spotify_dataset.artist_count": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Spotify_Dataset",
+			          "ConceptualProperty": "artist_count"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "artist count": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "artist_count": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "artist amount": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        }
+			      ]
+			    },
+			    "spotify_dataset.released_year": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Spotify_Dataset",
+			          "ConceptualProperty": "released_year"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "released year": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "released_year": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "year": {
+			            "State": "Generated",
+			            "Weight": 0.7
+			          }
+			        },
+			        {
+			          "released yr": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "spotify_dataset.released_month": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Spotify_Dataset",
+			          "ConceptualProperty": "released_month"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "released month": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "released_month": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "released mth": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        }
+			      ]
+			    },
+			    "spotify_dataset.released_day": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Spotify_Dataset",
+			          "ConceptualProperty": "released_day"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "released day": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "released_day": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "spotify_dataset.in_spotify_playlist": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Spotify_Dataset",
+			          "ConceptualProperty": "in_spotify_playlists"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "in spotify playlist": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "in_spotify_playlists": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "spotify_dataset.in_spotify_chart": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Spotify_Dataset",
+			          "ConceptualProperty": "in_spotify_charts"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "in spotify chart": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "in_spotify_charts": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "in spotify diagram": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        },
+			        {
+			          "in spotify plan": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        },
+			        {
+			          "in spotify graph": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        },
+			        {
+			          "in spotify table": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        },
+			        {
+			          "in spotify map": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        }
+			      ]
+			    },
+			    "spotify_dataset.stream": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Spotify_Dataset",
+			          "ConceptualProperty": "streams"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "stream": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "watercourse": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "torrent": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "rivulet": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "beck": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "brook": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "river": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "tributary": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "creek": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "crick": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "jet": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.452
+			          }
+			        }
+			      ]
+			    },
+			    "spotify_dataset.in_apple_playlist": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Spotify_Dataset",
+			          "ConceptualProperty": "in_apple_playlists"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "in apple playlist": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "in_apple_playlists": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "playlist": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "apple playlist": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        }
+			      ]
+			    },
+			    "spotify_dataset.in_apple_chart": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Spotify_Dataset",
+			          "ConceptualProperty": "in_apple_charts"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "in apple chart": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "in_apple_charts": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "apple chart": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "in apple diagram": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        },
+			        {
+			          "in apple plan": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        },
+			        {
+			          "in apple graph": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        },
+			        {
+			          "in apple table": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        },
+			        {
+			          "in apple map": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        },
+			        {
+			          "apple diagram": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "apple plan": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "apple graph": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "apple table": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "apple map": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        }
+			      ]
+			    },
+			    "spotify_dataset.in_deezer_playlist": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Spotify_Dataset",
+			          "ConceptualProperty": "in_deezer_playlists"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "in deezer playlist": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "in_deezer_playlists": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "spotify_dataset.in_deezer_chart": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Spotify_Dataset",
+			          "ConceptualProperty": "in_deezer_charts"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "in deezer chart": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "in_deezer_charts": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "in deezer diagram": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        },
+			        {
+			          "in deezer plan": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        },
+			        {
+			          "in deezer graph": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        },
+			        {
+			          "in deezer table": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        },
+			        {
+			          "in deezer map": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        }
+			      ]
+			    },
+			    "spotify_dataset.in_shazam_chart": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Spotify_Dataset",
+			          "ConceptualProperty": "in_shazam_charts"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "in shazam chart": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "in_shazam_charts": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "in shazam diagram": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        },
+			        {
+			          "in shazam plan": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        },
+			        {
+			          "in shazam graph": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        },
+			        {
+			          "in shazam table": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        },
+			        {
+			          "in shazam map": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        }
+			      ]
+			    },
+			    "spotify_dataset.bpm": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Spotify_Dataset",
+			          "ConceptualProperty": "bpm"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "bpm": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "spotify_dataset.key": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Spotify_Dataset",
+			          "ConceptualProperty": "key"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "key": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "main": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "basic": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "fundamental": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "central": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "major": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "keynote": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "essential": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "solution": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.466
+			          }
+			        },
+			        {
+			          "explanation": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.466
+			          }
+			        },
+			        {
+			          "basis": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.466
+			          }
+			        }
+			      ]
+			    },
+			    "spotify_dataset.mode": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Spotify_Dataset",
+			          "ConceptualProperty": "mode"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "mode": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "manner": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "method": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "genre": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "style": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "mean": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "approach": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "type": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "way": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "kind": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "fashion": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        }
+			      ]
+			    },
+			    "spotify_dataset.danceability_": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Spotify_Dataset",
+			          "ConceptualProperty": "danceability_%"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "danceability_%": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "danceability_ percentage": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "danceability_ pct": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        }
+			      ]
+			    },
+			    "spotify_dataset.valence_": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Spotify_Dataset",
+			          "ConceptualProperty": "valence_%"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "valence_%": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "valence_ percentage": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "valence_ pct": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        }
+			      ]
+			    },
+			    "spotify_dataset.energy_": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Spotify_Dataset",
+			          "ConceptualProperty": "energy_%"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "energy_%": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "energy_ percentage": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "energy_ pct": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        }
+			      ]
+			    },
+			    "spotify_dataset.acousticness_": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Spotify_Dataset",
+			          "ConceptualProperty": "acousticness_%"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "acousticness_%": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "acousticness_ percentage": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "acousticness_ pct": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        }
+			      ]
+			    },
+			    "spotify_dataset.instrumentalness_": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Spotify_Dataset",
+			          "ConceptualProperty": "instrumentalness_%"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "instrumentalness_%": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "instrumentalness_ percentage": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "instrumentalness_ pct": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        }
+			      ]
+			    },
+			    "spotify_dataset.liveness_": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Spotify_Dataset",
+			          "ConceptualProperty": "liveness_%"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "liveness_%": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "liveness_ percentage": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "liveness_ pct": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        }
+			      ]
+			    },
+			    "spotify_dataset.speechiness_": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Spotify_Dataset",
+			          "ConceptualProperty": "speechiness_%"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "speechiness_%": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "speechiness_ percentage": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "speechiness_ pct": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        }
+			      ]
+			    },
+			    "spotify_dataset.cover_url": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Spotify_Dataset",
+			          "ConceptualProperty": "cover_url"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "cover url": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "cover_url": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "url": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "cover website": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "website": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "cover site": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "site": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        },
+			        {
+			          "cover web address": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.589
+			          }
+			        },
+			        {
+			          "web address": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.571
+			          }
+			        }
+			      ]
+			    },
+			    "spotify_dataset.date": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Spotify_Dataset",
+			          "ConceptualProperty": "Date"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "date": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "moment": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "period": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "spotify_dataset.max_streams": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Spotify_Dataset",
+			          "ConceptualProperty": "Max Streams"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "max streams": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "streams": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "maximum stream": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "max watercourse": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "max torrent": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "max rivulet": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "max beck": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "watercourse": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "torrent": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "rivulet": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "beck": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "max brook": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        }
+			      ]
+			    },
+			    "spotify_dataset.top_song_streams": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Spotify_Dataset",
+			          "ConceptualProperty": "Top Song Streams"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "top song streams": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "streams": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "song streams": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "best song stream": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "first song stream": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "leading song stream": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "maximum song stream": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "peak song stream": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "upper song stream": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "top song watercourse": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.508
+			          }
+			        },
+			        {
+			          "top song torrent": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.508
+			          }
+			        },
+			        {
+			          "top song rivulet": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.508
+			          }
+			        },
+			        {
+			          "top song beck": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.508
+			          }
+			        }
+			      ]
+			    },
+			    "spotify_dataset.average_stream_per_year": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Spotify_Dataset",
+			          "ConceptualProperty": "Average Stream per Year"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "average stream per year": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "average stream": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "average stream per yr": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.617
+			          }
+			        },
+			        {
+			          "average watercourse per year": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.514
+			          }
+			        },
+			        {
+			          "average torrent per year": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.514
+			          }
+			        },
+			        {
+			          "average rivulet per year": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.514
+			          }
+			        },
+			        {
+			          "average beck per year": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.514
+			          }
+			        },
+			        {
+			          "average watercourse": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "average torrent": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "average rivulet": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "average beck": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "average brook per year": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.499
+			          }
+			        }
+			      ]
+			    },
+			    "spotify_dataset.top_song_vs_avg_value": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Spotify_Dataset",
+			          "ConceptualProperty": "Top Song vs Avg Value"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "top song vs avg value": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "best song vs avg value": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.605
+			          }
+			        },
+			        {
+			          "first song vs avg value": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.605
+			          }
+			        },
+			        {
+			          "leading song vs avg value": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.605
+			          }
+			        },
+			        {
+			          "maximum song vs avg value": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.605
+			          }
+			        },
+			        {
+			          "peak song vs avg value": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.605
+			          }
+			        },
+			        {
+			          "upper song vs avg value": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.605
+			          }
+			        },
+			        {
+			          "top song vs average value": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.605
+			          }
+			        },
+			        {
+			          "top song vs avg assessment": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.52
+			          }
+			        },
+			        {
+			          "top song vs avg worth": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.504
+			          }
+			        },
+			        {
+			          "top song vs avg price": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.504
+			          }
+			        }
+			      ]
+			    },
+			    "spotify_dataset.top_song_vs_AVG": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Spotify_Dataset",
+			          "ConceptualProperty": "Top song vs AVG"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "top song vs AVG": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "top song vs average": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.748
+			          }
+			        },
+			        {
+			          "best song vs avg": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.599
+			          }
+			        },
+			        {
+			          "first song vs avg": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.599
+			          }
+			        },
+			        {
+			          "leading song vs avg": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.599
+			          }
+			        },
+			        {
+			          "maximum song vs avg": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.599
+			          }
+			        },
+			        {
+			          "peak song vs avg": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.599
+			          }
+			        },
+			        {
+			          "upper song vs avg": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.599
+			          }
+			        }
+			      ]
+			    },
+			    "spotify_dataset.image_HTML": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Spotify_Dataset",
+			          "ConceptualProperty": "Image HTML"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "image HTML": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "HTML": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        }
+			      ]
+			    },
+			    "spotify_dataset.percent_val": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Spotify_Dataset",
+			          "ConceptualProperty": "Percent_Val"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "percent val": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Percent_Val": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "val": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        }
+			      ]
+			    },
+			    "spotify_dataset.v_Track_track": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Spotify_Dataset",
+			          "ConceptualProperty": "_Track"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "_track": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "_ path": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "_ pathway": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "_ road": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "_ roadway": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "_ footpath": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "_ trajectory": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "_ way": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "_ trail": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "_ footprint": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.475
+			          }
+			        },
+			        {
+			          "_ footstep": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.475
+			          }
+			        }
+			      ]
+			    },
+			    "date_auto_template": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "DateAutoTemplate"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "date auto template": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "DateAutoTemplate": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "template": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "auto template": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "moment auto template": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "period auto template": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "date auto cutout": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.508
+			          }
+			        },
+			        {
+			          "auto cutout": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "date auto pattern": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        },
+			        {
+			          "date auto master": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        },
+			        {
+			          "date auto stencil": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        },
+			        {
+			          "date auto model": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        },
+			        {
+			          "date auto prototype": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        },
+			        {
+			          "date auto original": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        }
+			      ]
+			    },
+			    "date_auto_template.date": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "DateAutoTemplate",
+			          "ConceptualProperty": "Date"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "date": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "moment": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "period": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "date_auto_template.year": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "DateAutoTemplate",
+			          "ConceptualProperty": "Year"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "year": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "yr": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "date_auto_template.year_quarter_number": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "DateAutoTemplate",
+			          "ConceptualProperty": "Year Quarter Number"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "year quarter number": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "quarter number": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "year quarter no": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        },
+			        {
+			          "quarter no": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "year qtr number": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.677
+			          }
+			        },
+			        {
+			          "qtr number": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.667
+			          }
+			        },
+			        {
+			          "yr quarter number": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        }
+			      ]
+			    },
+			    "date_auto_template.year_quarter": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "DateAutoTemplate",
+			          "ConceptualProperty": "Year Quarter"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "year quarter": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "year qtr": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.833
+			          }
+			        },
+			        {
+			          "yr quarter": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        }
+			      ]
+			    },
+			    "date_auto_template.quarter": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "DateAutoTemplate",
+			          "ConceptualProperty": "Quarter"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "quarter": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "qtr": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.818
+			          }
+			        }
+			      ]
+			    },
+			    "date_auto_template.year_month": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "DateAutoTemplate",
+			          "ConceptualProperty": "Year Month"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "year month": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "year mth": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "yr month": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        }
+			      ]
+			    },
+			    "date_auto_template.year_month_number": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "DateAutoTemplate",
+			          "ConceptualProperty": "Year Month Number"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "year month number": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "month number": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "year month no": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        },
+			        {
+			          "month no": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "yr month number": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "year mth number": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "mth number": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        }
+			      ]
+			    },
+			    "date_auto_template.month": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "DateAutoTemplate",
+			          "ConceptualProperty": "Month"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "month": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "mth": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        }
+			      ]
+			    },
+			    "date_auto_template.month_number": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "DateAutoTemplate",
+			          "ConceptualProperty": "Month Number"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "month number": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "month no": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "mth number": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        }
+			      ]
+			    },
+			    "date_auto_template.day_of_week_number": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "DateAutoTemplate",
+			          "ConceptualProperty": "Day of Week Number"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "day of week number": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "day of week no": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.599
+			          }
+			        }
+			      ]
+			    },
+			    "date_auto_template.day_of_week": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "DateAutoTemplate",
+			          "ConceptualProperty": "Day of Week"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "day of week": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "date_auto_template.date_with_transactions": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "DateAutoTemplate",
+			          "ConceptualProperty": "DateWithTransactions"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "date with transactions": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "date with transaction": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.78
+			          }
+			        },
+			        {
+			          "DateWithTransactions": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "moment with transaction": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "period with transaction": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        }
+			      ]
+			    },
+			    "date_auto_template.calendar": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "DateAutoTemplate",
+			          "Hierarchy": "Calendar"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "calendar": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "almanac": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "datebook": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "agenda": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "logbook": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "diary": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "schedule": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "timetable": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "date_auto_template.calendar.year": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "DateAutoTemplate",
+			          "Hierarchy": "Calendar",
+			          "HierarchyLevel": "Year"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "year": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "yr": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "date_auto_template.calendar.month": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "DateAutoTemplate",
+			          "Hierarchy": "Calendar",
+			          "HierarchyLevel": "Month"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "month": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "mth": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "date_auto_template.calendar.date": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "DateAutoTemplate",
+			          "Hierarchy": "Calendar",
+			          "HierarchyLevel": "Date"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "date": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "moment": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "period": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "date": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Date"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "date": {
+			            "State": "Generated",
+			            "Weight": 0.87
+			          }
+			        },
+			        {
+			          "moment": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "period": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        }
+			      ]
+			    },
+			    "date.date": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Date",
+			          "ConceptualProperty": "Date"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "date": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "moment": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "period": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "date.year": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Date",
+			          "ConceptualProperty": "Year"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "year": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "yr": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "date.year_quarter_number": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Date",
+			          "ConceptualProperty": "Year Quarter Number"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "year quarter number": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "quarter number": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "year quarter no": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        },
+			        {
+			          "quarter no": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "year qtr number": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.677
+			          }
+			        },
+			        {
+			          "qtr number": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.667
+			          }
+			        },
+			        {
+			          "yr quarter number": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        }
+			      ]
+			    },
+			    "date.year_quarter": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Date",
+			          "ConceptualProperty": "Year Quarter"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "year quarter": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "year qtr": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.833
+			          }
+			        },
+			        {
+			          "yr quarter": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        }
+			      ]
+			    },
+			    "date.quarter": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Date",
+			          "ConceptualProperty": "Quarter"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "quarter": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "qtr": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.818
+			          }
+			        }
+			      ]
+			    },
+			    "date.year_month": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Date",
+			          "ConceptualProperty": "Year Month"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "year month": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "year mth": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "yr month": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        }
+			      ]
+			    },
+			    "date.year_month_number": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Date",
+			          "ConceptualProperty": "Year Month Number"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "year month number": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "month number": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "year month no": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        },
+			        {
+			          "month no": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "yr month number": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "year mth number": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "mth number": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        }
+			      ]
+			    },
+			    "date.month": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Date",
+			          "ConceptualProperty": "Month"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "month": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "mth": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        }
+			      ]
+			    },
+			    "date.month_number": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Date",
+			          "ConceptualProperty": "Month Number"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "month number": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "month no": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "mth number": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        }
+			      ]
+			    },
+			    "date.day_of_week_number": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Date",
+			          "ConceptualProperty": "Day of Week Number"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "day of week number": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "day of week no": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.599
+			          }
+			        }
+			      ]
+			    },
+			    "date.day_of_week": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Date",
+			          "ConceptualProperty": "Day of Week"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "day of week": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "date.date_with_transactions": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Date",
+			          "ConceptualProperty": "DateWithTransactions"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "date with transactions": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "date with transaction": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.78
+			          }
+			        },
+			        {
+			          "DateWithTransactions": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "moment with transaction": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "period with transaction": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        }
+			      ]
+			    },
+			    "date.v_ShowValueForDates_ShowValueForDates": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Date",
+			          "ConceptualProperty": "_ShowValueForDates"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "_ShowValueForDates": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "date.calendar": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Date",
+			          "Hierarchy": "Calendar"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "calendar": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "almanac": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "datebook": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "agenda": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "logbook": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "diary": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "schedule": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "timetable": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "date.calendar.year": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Date",
+			          "Hierarchy": "Calendar",
+			          "HierarchyLevel": "Year"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "year": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "yr": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "date.calendar.month": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Date",
+			          "Hierarchy": "Calendar",
+			          "HierarchyLevel": "Month"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "month": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "mth": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "date.calendar.date": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Date",
+			          "Hierarchy": "Calendar",
+			          "HierarchyLevel": "Date"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "date": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "moment": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "period": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    }
+			  },
+			  "Relationships": {
+			    "date_calendar_has_date": {
+			      "Binding": {
+			        "ConceptualEntity": "Date"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "date.calendar": {
+			          "Target": {
+			            "Entity": "date.calendar"
+			          }
+			        },
+			        "date.calendar.date": {
+			          "Target": {
+			            "Entity": "date.calendar.date"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "date.calendar"
+			            },
+			            "Object": {
+			              "Role": "date.calendar.date"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "calendars_have_dates"
+			        }
+			      ]
+			    },
+			    "date_calendar_has_month": {
+			      "Binding": {
+			        "ConceptualEntity": "Date"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "date.calendar": {
+			          "Target": {
+			            "Entity": "date.calendar"
+			          }
+			        },
+			        "date.calendar.month": {
+			          "Target": {
+			            "Entity": "date.calendar.month"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "date.calendar"
+			            },
+			            "Object": {
+			              "Role": "date.calendar.month"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "calendars_have_months"
+			        }
+			      ]
+			    },
+			    "date_calendar_has_year": {
+			      "Binding": {
+			        "ConceptualEntity": "Date"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "date.calendar": {
+			          "Target": {
+			            "Entity": "date.calendar"
+			          }
+			        },
+			        "date.calendar.year": {
+			          "Target": {
+			            "Entity": "date.calendar.year"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "date.calendar"
+			            },
+			            "Object": {
+			              "Role": "date.calendar.year"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "calendars_have_years"
+			        }
+			      ]
+			    },
+			    "date_auto_template_calendar_has_date": {
+			      "Binding": {
+			        "ConceptualEntity": "DateAutoTemplate"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "date_auto_template.calendar": {
+			          "Target": {
+			            "Entity": "date_auto_template.calendar"
+			          }
+			        },
+			        "date_auto_template.calendar.date": {
+			          "Target": {
+			            "Entity": "date_auto_template.calendar.date"
+			          }
+			        }
+			      }
+			    },
+			    "date_auto_template_calendar_has_month": {
+			      "Binding": {
+			        "ConceptualEntity": "DateAutoTemplate"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "date_auto_template.calendar": {
+			          "Target": {
+			            "Entity": "date_auto_template.calendar"
+			          }
+			        },
+			        "date_auto_template.calendar.month": {
+			          "Target": {
+			            "Entity": "date_auto_template.calendar.month"
+			          }
+			        }
+			      }
+			    },
+			    "date_auto_template_calendar_has_year": {
+			      "Binding": {
+			        "ConceptualEntity": "DateAutoTemplate"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "date_auto_template.calendar": {
+			          "Target": {
+			            "Entity": "date_auto_template.calendar"
+			          }
+			        },
+			        "date_auto_template.calendar.year": {
+			          "Target": {
+			            "Entity": "date_auto_template.calendar.year"
+			          }
+			        }
+			      }
+			    },
+			    "date_has_calendar": {
+			      "Binding": {
+			        "ConceptualEntity": "Date"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "date": {
+			          "Target": {
+			            "Entity": "date"
+			          }
+			        },
+			        "date.calendar": {
+			          "Target": {
+			            "Entity": "date.calendar"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "date"
+			            },
+			            "Object": {
+			              "Role": "date.calendar"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dates_have_calendars"
+			        }
+			      ]
+			    },
+			    "date_has_day_of_week": {
+			      "Binding": {
+			        "ConceptualEntity": "Date"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "date": {
+			          "Target": {
+			            "Entity": "date"
+			          }
+			        },
+			        "date.day_of_week": {
+			          "Target": {
+			            "Entity": "date.day_of_week"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "date"
+			            },
+			            "Object": {
+			              "Role": "date.day_of_week"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dates_have_day_of_week"
+			        }
+			      ]
+			    },
+			    "date_has_month": {
+			      "Binding": {
+			        "ConceptualEntity": "Date"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "date": {
+			          "Target": {
+			            "Entity": "date"
+			          }
+			        },
+			        "date.month": {
+			          "Target": {
+			            "Entity": "date.month"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "date"
+			            },
+			            "Object": {
+			              "Role": "date.month"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dates_have_months"
+			        }
+			      ]
+			    },
+			    "date_has_year_month": {
+			      "Binding": {
+			        "ConceptualEntity": "Date"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "date": {
+			          "Target": {
+			            "Entity": "date"
+			          }
+			        },
+			        "date.year_month": {
+			          "Target": {
+			            "Entity": "date.year_month"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "date"
+			            },
+			            "Object": {
+			              "Role": "date.year_month"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dates_have_year_months"
+			        }
+			      ]
+			    },
+			    "date_has_quarter": {
+			      "Binding": {
+			        "ConceptualEntity": "Date"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "date": {
+			          "Target": {
+			            "Entity": "date"
+			          }
+			        },
+			        "date.quarter": {
+			          "Target": {
+			            "Entity": "date.quarter"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "date"
+			            },
+			            "Object": {
+			              "Role": "date.quarter"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dates_have_quarters"
+			        }
+			      ]
+			    },
+			    "date_has_year_quarter": {
+			      "Binding": {
+			        "ConceptualEntity": "Date"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "date": {
+			          "Target": {
+			            "Entity": "date"
+			          }
+			        },
+			        "date.year_quarter": {
+			          "Target": {
+			            "Entity": "date.year_quarter"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "date"
+			            },
+			            "Object": {
+			              "Role": "date.year_quarter"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dates_have_year_quarters"
+			        }
+			      ]
+			    },
+			    "date_has_year": {
+			      "Binding": {
+			        "ConceptualEntity": "Date"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "date": {
+			          "Target": {
+			            "Entity": "date"
+			          }
+			        },
+			        "date.year": {
+			          "Target": {
+			            "Entity": "date.year"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "date"
+			            },
+			            "Object": {
+			              "Role": "date.year"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dates_have_years"
+			        }
+			      ]
+			    },
+			    "date_has_date": {
+			      "Binding": {
+			        "ConceptualEntity": "Date"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "date": {
+			          "Target": {
+			            "Entity": "date"
+			          }
+			        },
+			        "date.date": {
+			          "Target": {
+			            "Entity": "date.date"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "date"
+			            },
+			            "Object": {
+			              "Role": "date.date"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dates_have_dates"
+			        }
+			      ]
+			    },
+			    "spotify_dataset_has_v_Track_track": {
+			      "Binding": {
+			        "ConceptualEntity": "Spotify_Dataset"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "spotify_dataset": {
+			          "Target": {
+			            "Entity": "spotify_dataset"
+			          }
+			        },
+			        "spotify_dataset.v_Track_track": {
+			          "Target": {
+			            "Entity": "spotify_dataset.v_Track_track"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "spotify_dataset"
+			            },
+			            "Object": {
+			              "Role": "spotify_dataset.v_Track_track"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "spotify_datasets_have__track"
+			        }
+			      ]
+			    },
+			    "spotify_dataset_has_percent_val": {
+			      "Binding": {
+			        "ConceptualEntity": "Spotify_Dataset"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "spotify_dataset": {
+			          "Target": {
+			            "Entity": "spotify_dataset"
+			          }
+			        },
+			        "spotify_dataset.percent_val": {
+			          "Target": {
+			            "Entity": "spotify_dataset.percent_val"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "spotify_dataset"
+			            },
+			            "Object": {
+			              "Role": "spotify_dataset.percent_val"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "spotify_datasets_have_percent_val"
+			        }
+			      ]
+			    },
+			    "spotify_dataset_has_image_HTML": {
+			      "Binding": {
+			        "ConceptualEntity": "Spotify_Dataset"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "spotify_dataset": {
+			          "Target": {
+			            "Entity": "spotify_dataset"
+			          }
+			        },
+			        "spotify_dataset.image_HTML": {
+			          "Target": {
+			            "Entity": "spotify_dataset.image_HTML"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "spotify_dataset"
+			            },
+			            "Object": {
+			              "Role": "spotify_dataset.image_HTML"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "spotify_datasets_have_image_HTML"
+			        }
+			      ]
+			    },
+			    "spotify_dataset_has_top_song_vs_AVG": {
+			      "Binding": {
+			        "ConceptualEntity": "Spotify_Dataset"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "spotify_dataset": {
+			          "Target": {
+			            "Entity": "spotify_dataset"
+			          }
+			        },
+			        "spotify_dataset.top_song_vs_AVG": {
+			          "Target": {
+			            "Entity": "spotify_dataset.top_song_vs_AVG"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "spotify_dataset"
+			            },
+			            "Object": {
+			              "Role": "spotify_dataset.top_song_vs_AVG"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "spotify_datasets_have_top_song_vs_AVG"
+			        }
+			      ]
+			    },
+			    "spotify_dataset_has_top_song_vs_avg_value": {
+			      "Binding": {
+			        "ConceptualEntity": "Spotify_Dataset"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "spotify_dataset": {
+			          "Target": {
+			            "Entity": "spotify_dataset"
+			          }
+			        },
+			        "spotify_dataset.top_song_vs_avg_value": {
+			          "Target": {
+			            "Entity": "spotify_dataset.top_song_vs_avg_value"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "spotify_dataset"
+			            },
+			            "Object": {
+			              "Role": "spotify_dataset.top_song_vs_avg_value"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "spotify_datasets_have_top_song_vs_avg_value"
+			        }
+			      ]
+			    },
+			    "spotify_dataset_has_average_stream_per_year": {
+			      "Binding": {
+			        "ConceptualEntity": "Spotify_Dataset"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "spotify_dataset": {
+			          "Target": {
+			            "Entity": "spotify_dataset"
+			          }
+			        },
+			        "spotify_dataset.average_stream_per_year": {
+			          "Target": {
+			            "Entity": "spotify_dataset.average_stream_per_year"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "spotify_dataset"
+			            },
+			            "Object": {
+			              "Role": "spotify_dataset.average_stream_per_year"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "spotify_datasets_have_average_stream_per_year"
+			        }
+			      ]
+			    },
+			    "spotify_dataset_has_top_song_streams": {
+			      "Binding": {
+			        "ConceptualEntity": "Spotify_Dataset"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "spotify_dataset": {
+			          "Target": {
+			            "Entity": "spotify_dataset"
+			          }
+			        },
+			        "spotify_dataset.top_song_streams": {
+			          "Target": {
+			            "Entity": "spotify_dataset.top_song_streams"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "spotify_dataset"
+			            },
+			            "Object": {
+			              "Role": "spotify_dataset.top_song_streams"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "spotify_datasets_have_top_song_streams"
+			        }
+			      ]
+			    },
+			    "spotify_dataset_has_max_streams": {
+			      "Binding": {
+			        "ConceptualEntity": "Spotify_Dataset"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "spotify_dataset": {
+			          "Target": {
+			            "Entity": "spotify_dataset"
+			          }
+			        },
+			        "spotify_dataset.max_streams": {
+			          "Target": {
+			            "Entity": "spotify_dataset.max_streams"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "spotify_dataset"
+			            },
+			            "Object": {
+			              "Role": "spotify_dataset.max_streams"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "spotify_datasets_have_max_streams"
+			        }
+			      ]
+			    },
+			    "spotify_dataset_has_date": {
+			      "Binding": {
+			        "ConceptualEntity": "Spotify_Dataset"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "spotify_dataset": {
+			          "Target": {
+			            "Entity": "spotify_dataset"
+			          }
+			        },
+			        "spotify_dataset.date": {
+			          "Target": {
+			            "Entity": "spotify_dataset.date"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "spotify_dataset"
+			            },
+			            "Object": {
+			              "Role": "spotify_dataset.date"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "spotify_datasets_have_dates"
+			        }
+			      ]
+			    },
+			    "spotify_dataset_has_cover_url": {
+			      "Binding": {
+			        "ConceptualEntity": "Spotify_Dataset"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "spotify_dataset": {
+			          "Target": {
+			            "Entity": "spotify_dataset"
+			          }
+			        },
+			        "spotify_dataset.cover_url": {
+			          "Target": {
+			            "Entity": "spotify_dataset.cover_url"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "spotify_dataset"
+			            },
+			            "Object": {
+			              "Role": "spotify_dataset.cover_url"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "spotify_datasets_have_cover_urls"
+			        }
+			      ]
+			    },
+			    "spotify_dataset_has_speechiness_": {
+			      "Binding": {
+			        "ConceptualEntity": "Spotify_Dataset"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "spotify_dataset": {
+			          "Target": {
+			            "Entity": "spotify_dataset"
+			          }
+			        },
+			        "spotify_dataset.speechiness_": {
+			          "Target": {
+			            "Entity": "spotify_dataset.speechiness_"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "spotify_dataset"
+			            },
+			            "Object": {
+			              "Role": "spotify_dataset.speechiness_"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "spotify_datasets_have_speechiness_"
+			        }
+			      ]
+			    },
+			    "spotify_dataset_has_liveness_": {
+			      "Binding": {
+			        "ConceptualEntity": "Spotify_Dataset"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "spotify_dataset": {
+			          "Target": {
+			            "Entity": "spotify_dataset"
+			          }
+			        },
+			        "spotify_dataset.liveness_": {
+			          "Target": {
+			            "Entity": "spotify_dataset.liveness_"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "spotify_dataset"
+			            },
+			            "Object": {
+			              "Role": "spotify_dataset.liveness_"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "spotify_datasets_have_liveness_"
+			        }
+			      ]
+			    },
+			    "spotify_dataset_has_instrumentalness_": {
+			      "Binding": {
+			        "ConceptualEntity": "Spotify_Dataset"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "spotify_dataset": {
+			          "Target": {
+			            "Entity": "spotify_dataset"
+			          }
+			        },
+			        "spotify_dataset.instrumentalness_": {
+			          "Target": {
+			            "Entity": "spotify_dataset.instrumentalness_"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "spotify_dataset"
+			            },
+			            "Object": {
+			              "Role": "spotify_dataset.instrumentalness_"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "spotify_datasets_have_instrumentalness_"
+			        }
+			      ]
+			    },
+			    "spotify_dataset_has_acousticness_": {
+			      "Binding": {
+			        "ConceptualEntity": "Spotify_Dataset"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "spotify_dataset": {
+			          "Target": {
+			            "Entity": "spotify_dataset"
+			          }
+			        },
+			        "spotify_dataset.acousticness_": {
+			          "Target": {
+			            "Entity": "spotify_dataset.acousticness_"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "spotify_dataset"
+			            },
+			            "Object": {
+			              "Role": "spotify_dataset.acousticness_"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "spotify_datasets_have_acousticness_"
+			        }
+			      ]
+			    },
+			    "spotify_dataset_has_energy_": {
+			      "Binding": {
+			        "ConceptualEntity": "Spotify_Dataset"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "spotify_dataset": {
+			          "Target": {
+			            "Entity": "spotify_dataset"
+			          }
+			        },
+			        "spotify_dataset.energy_": {
+			          "Target": {
+			            "Entity": "spotify_dataset.energy_"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "spotify_dataset"
+			            },
+			            "Object": {
+			              "Role": "spotify_dataset.energy_"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "spotify_datasets_have_energy_"
+			        }
+			      ]
+			    },
+			    "spotify_dataset_has_valence_": {
+			      "Binding": {
+			        "ConceptualEntity": "Spotify_Dataset"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "spotify_dataset": {
+			          "Target": {
+			            "Entity": "spotify_dataset"
+			          }
+			        },
+			        "spotify_dataset.valence_": {
+			          "Target": {
+			            "Entity": "spotify_dataset.valence_"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "spotify_dataset"
+			            },
+			            "Object": {
+			              "Role": "spotify_dataset.valence_"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "spotify_datasets_have_valence_"
+			        }
+			      ]
+			    },
+			    "spotify_dataset_has_danceability_": {
+			      "Binding": {
+			        "ConceptualEntity": "Spotify_Dataset"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "spotify_dataset": {
+			          "Target": {
+			            "Entity": "spotify_dataset"
+			          }
+			        },
+			        "spotify_dataset.danceability_": {
+			          "Target": {
+			            "Entity": "spotify_dataset.danceability_"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "spotify_dataset"
+			            },
+			            "Object": {
+			              "Role": "spotify_dataset.danceability_"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "spotify_datasets_have_danceability_"
+			        }
+			      ]
+			    },
+			    "spotify_dataset_has_mode": {
+			      "Binding": {
+			        "ConceptualEntity": "Spotify_Dataset"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "spotify_dataset": {
+			          "Target": {
+			            "Entity": "spotify_dataset"
+			          }
+			        },
+			        "spotify_dataset.mode": {
+			          "Target": {
+			            "Entity": "spotify_dataset.mode"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "spotify_dataset"
+			            },
+			            "Object": {
+			              "Role": "spotify_dataset.mode"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "spotify_datasets_have_modes"
+			        }
+			      ]
+			    },
+			    "spotify_dataset_has_key": {
+			      "Binding": {
+			        "ConceptualEntity": "Spotify_Dataset"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "spotify_dataset": {
+			          "Target": {
+			            "Entity": "spotify_dataset"
+			          }
+			        },
+			        "spotify_dataset.key": {
+			          "Target": {
+			            "Entity": "spotify_dataset.key"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "spotify_dataset"
+			            },
+			            "Object": {
+			              "Role": "spotify_dataset.key"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "spotify_datasets_have_keys"
+			        }
+			      ]
+			    },
+			    "spotify_dataset_has_bpm": {
+			      "Binding": {
+			        "ConceptualEntity": "Spotify_Dataset"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "spotify_dataset": {
+			          "Target": {
+			            "Entity": "spotify_dataset"
+			          }
+			        },
+			        "spotify_dataset.bpm": {
+			          "Target": {
+			            "Entity": "spotify_dataset.bpm"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "spotify_dataset"
+			            },
+			            "Object": {
+			              "Role": "spotify_dataset.bpm"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "spotify_datasets_have_bpms"
+			        }
+			      ]
+			    },
+			    "spotify_dataset_has_in_shazam_chart": {
+			      "Binding": {
+			        "ConceptualEntity": "Spotify_Dataset"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "spotify_dataset": {
+			          "Target": {
+			            "Entity": "spotify_dataset"
+			          }
+			        },
+			        "spotify_dataset.in_shazam_chart": {
+			          "Target": {
+			            "Entity": "spotify_dataset.in_shazam_chart"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "spotify_dataset"
+			            },
+			            "Object": {
+			              "Role": "spotify_dataset.in_shazam_chart"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "spotify_datasets_have_in_shazam_chart"
+			        }
+			      ]
+			    },
+			    "spotify_dataset_has_in_deezer_chart": {
+			      "Binding": {
+			        "ConceptualEntity": "Spotify_Dataset"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "spotify_dataset": {
+			          "Target": {
+			            "Entity": "spotify_dataset"
+			          }
+			        },
+			        "spotify_dataset.in_deezer_chart": {
+			          "Target": {
+			            "Entity": "spotify_dataset.in_deezer_chart"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "spotify_dataset"
+			            },
+			            "Object": {
+			              "Role": "spotify_dataset.in_deezer_chart"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "spotify_datasets_have_in_deezer_chart"
+			        }
+			      ]
+			    },
+			    "spotify_dataset_has_in_deezer_playlist": {
+			      "Binding": {
+			        "ConceptualEntity": "Spotify_Dataset"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "spotify_dataset": {
+			          "Target": {
+			            "Entity": "spotify_dataset"
+			          }
+			        },
+			        "spotify_dataset.in_deezer_playlist": {
+			          "Target": {
+			            "Entity": "spotify_dataset.in_deezer_playlist"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "spotify_dataset"
+			            },
+			            "Object": {
+			              "Role": "spotify_dataset.in_deezer_playlist"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "spotify_datasets_have_in_deezer_playlist"
+			        }
+			      ]
+			    },
+			    "spotify_dataset_has_in_apple_chart": {
+			      "Binding": {
+			        "ConceptualEntity": "Spotify_Dataset"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "spotify_dataset": {
+			          "Target": {
+			            "Entity": "spotify_dataset"
+			          }
+			        },
+			        "spotify_dataset.in_apple_chart": {
+			          "Target": {
+			            "Entity": "spotify_dataset.in_apple_chart"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "spotify_dataset"
+			            },
+			            "Object": {
+			              "Role": "spotify_dataset.in_apple_chart"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "spotify_datasets_have_in_apple_chart"
+			        }
+			      ]
+			    },
+			    "spotify_dataset_has_in_apple_playlist": {
+			      "Binding": {
+			        "ConceptualEntity": "Spotify_Dataset"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "spotify_dataset": {
+			          "Target": {
+			            "Entity": "spotify_dataset"
+			          }
+			        },
+			        "spotify_dataset.in_apple_playlist": {
+			          "Target": {
+			            "Entity": "spotify_dataset.in_apple_playlist"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "spotify_dataset"
+			            },
+			            "Object": {
+			              "Role": "spotify_dataset.in_apple_playlist"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "spotify_datasets_have_in_apple_playlist"
+			        }
+			      ]
+			    },
+			    "spotify_dataset_has_stream": {
+			      "Binding": {
+			        "ConceptualEntity": "Spotify_Dataset"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "spotify_dataset": {
+			          "Target": {
+			            "Entity": "spotify_dataset"
+			          }
+			        },
+			        "spotify_dataset.stream": {
+			          "Target": {
+			            "Entity": "spotify_dataset.stream"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "spotify_dataset"
+			            },
+			            "Object": {
+			              "Role": "spotify_dataset.stream"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "spotify_datasets_have_streams"
+			        }
+			      ]
+			    },
+			    "spotify_dataset_has_in_spotify_chart": {
+			      "Binding": {
+			        "ConceptualEntity": "Spotify_Dataset"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "spotify_dataset": {
+			          "Target": {
+			            "Entity": "spotify_dataset"
+			          }
+			        },
+			        "spotify_dataset.in_spotify_chart": {
+			          "Target": {
+			            "Entity": "spotify_dataset.in_spotify_chart"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "spotify_dataset"
+			            },
+			            "Object": {
+			              "Role": "spotify_dataset.in_spotify_chart"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "spotify_datasets_have_in_spotify_chart"
+			        }
+			      ]
+			    },
+			    "spotify_dataset_has_in_spotify_playlist": {
+			      "Binding": {
+			        "ConceptualEntity": "Spotify_Dataset"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "spotify_dataset": {
+			          "Target": {
+			            "Entity": "spotify_dataset"
+			          }
+			        },
+			        "spotify_dataset.in_spotify_playlist": {
+			          "Target": {
+			            "Entity": "spotify_dataset.in_spotify_playlist"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "spotify_dataset"
+			            },
+			            "Object": {
+			              "Role": "spotify_dataset.in_spotify_playlist"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "spotify_datasets_have_in_spotify_playlist"
+			        }
+			      ]
+			    },
+			    "spotify_dataset_has_released_day": {
+			      "Binding": {
+			        "ConceptualEntity": "Spotify_Dataset"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "spotify_dataset": {
+			          "Target": {
+			            "Entity": "spotify_dataset"
+			          }
+			        },
+			        "spotify_dataset.released_day": {
+			          "Target": {
+			            "Entity": "spotify_dataset.released_day"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "spotify_dataset"
+			            },
+			            "Object": {
+			              "Role": "spotify_dataset.released_day"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "spotify_datasets_have_released_days"
+			        }
+			      ]
+			    },
+			    "spotify_dataset_has_released_month": {
+			      "Binding": {
+			        "ConceptualEntity": "Spotify_Dataset"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "spotify_dataset": {
+			          "Target": {
+			            "Entity": "spotify_dataset"
+			          }
+			        },
+			        "spotify_dataset.released_month": {
+			          "Target": {
+			            "Entity": "spotify_dataset.released_month"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "spotify_dataset"
+			            },
+			            "Object": {
+			              "Role": "spotify_dataset.released_month"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "spotify_datasets_have_released_months"
+			        }
+			      ]
+			    },
+			    "spotify_dataset_has_released_year": {
+			      "Binding": {
+			        "ConceptualEntity": "Spotify_Dataset"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "spotify_dataset": {
+			          "Target": {
+			            "Entity": "spotify_dataset"
+			          }
+			        },
+			        "spotify_dataset.released_year": {
+			          "Target": {
+			            "Entity": "spotify_dataset.released_year"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "spotify_dataset"
+			            },
+			            "Object": {
+			              "Role": "spotify_dataset.released_year"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "spotify_datasets_have_released_years"
+			        }
+			      ]
+			    },
+			    "spotify_dataset_has_artist_count": {
+			      "Binding": {
+			        "ConceptualEntity": "Spotify_Dataset"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "spotify_dataset": {
+			          "Target": {
+			            "Entity": "spotify_dataset"
+			          }
+			        },
+			        "spotify_dataset.artist_count": {
+			          "Target": {
+			            "Entity": "spotify_dataset.artist_count"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "spotify_dataset"
+			            },
+			            "Object": {
+			              "Role": "spotify_dataset.artist_count"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "spotify_datasets_have_artist_counts"
+			        }
+			      ]
+			    },
+			    "spotify_dataset_has_artists_name": {
+			      "Binding": {
+			        "ConceptualEntity": "Spotify_Dataset"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "spotify_dataset": {
+			          "Target": {
+			            "Entity": "spotify_dataset"
+			          }
+			        },
+			        "spotify_dataset.artists_name": {
+			          "Target": {
+			            "Entity": "spotify_dataset.artists_name"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "spotify_dataset"
+			            },
+			            "Object": {
+			              "Role": "spotify_dataset.artists_name"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "spotify_datasets_have_artists_names"
+			        }
+			      ]
+			    },
+			    "spotify_dataset_has_track_name": {
+			      "Binding": {
+			        "ConceptualEntity": "Spotify_Dataset"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "spotify_dataset": {
+			          "Target": {
+			            "Entity": "spotify_dataset"
+			          }
+			        },
+			        "spotify_dataset.track_name": {
+			          "Target": {
+			            "Entity": "spotify_dataset.track_name"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "spotify_dataset"
+			            },
+			            "Object": {
+			              "Role": "spotify_dataset.track_name"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "spotify_datasets_have_track_names"
+			        }
+			      ]
+			    },
+			    "spotify_dataset_is_released_in_released_year": {
+			      "Binding": {
+			        "ConceptualEntity": "Spotify_Dataset"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "spotify_dataset": {
+			          "Target": {
+			            "Entity": "spotify_dataset"
+			          }
+			        },
+			        "spotify_dataset.released_year": {
+			          "Target": {
+			            "Entity": "spotify_dataset.released_year"
+			          }
+			        }
+			      },
+			      "SemanticSlots": {
+			        "When": {
+			          "Role": "spotify_dataset.released_year"
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Verb": {
+			            "Verbs": [
+			              {
+			                "release": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Object": {
+			              "Role": "spotify_dataset"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.9,
+			          "ID": "spotify_datasets_are_released_on_released_years"
+			        }
+			      ]
+			    }
+			  }
+			}
+		contentType: json
+

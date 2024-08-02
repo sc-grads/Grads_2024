@@ -1,0 +1,38 @@
+{
+  "name": "59d2bc5a2badd23c7012",
+  "layouts": [
+    {
+      "id": 0,
+      "position": {
+        "x": 368,
+        "y": 492,
+        "z": 17000,
+        "width": 43.636363636363633,
+        "height": 29.999999999999996,
+        "tabOrder": 17000
+      }
+    }
+  ],
+  "singleVisual": {
+    "visualType": "image",
+    "drillFilterOtherVisuals": true,
+    "objects": {
+      "general": [
+        {
+          "properties": {
+            "imageUrl": {
+              "expr": {
+                "ResourcePackageItem": {
+                  "PackageName": "RegisteredResources",
+                  "PackageType": 1,
+                  "ItemName": "Music_icon8194603066269819.png"
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  },
+  "howCreated": "InsertVisualButton"
+}
