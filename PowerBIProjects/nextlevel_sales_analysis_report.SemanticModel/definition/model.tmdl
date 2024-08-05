@@ -1,0 +1,27 @@
+model Model
+	culture: en-US
+	defaultPowerBIDataSourceVersion: powerBI_V3
+	sourceQueryCulture: en-US
+	dataAccessOptions
+		legacyRedirects
+		returnErrorValuesAsNull
+
+annotation __PBI_TimeIntelligenceEnabled = 1
+
+annotation PBIDesktopVersion = 2.131.1203.0 (24.07)
+
+annotation PBI_QueryOrder = ["DIM_MANAGERS","FACT_SALES","DIM_DATE","LAST_REFRESHED","*Measures"]
+
+annotation PBI_ProTooling = ["DevMode"]
+
+ref table DateTableTemplate_86132369-b2c6-457e-91ba-5dcc2cb40acd
+ref table DIM_MANAGERS
+ref table FACT_SALES
+ref table DIM_DATE
+ref table LocalDateTable_f87fa9e8-7d25-425d-b169-ecb331113ac9
+ref table LAST_REFRESHED
+ref table LocalDateTable_aafb8865-c8d0-4d5e-8c22-8037cf2edd5a
+ref table *Measures
+
+ref cultureInfo en-US
+
