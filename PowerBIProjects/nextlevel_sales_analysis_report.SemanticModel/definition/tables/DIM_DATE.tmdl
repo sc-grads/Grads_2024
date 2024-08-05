@@ -82,7 +82,7 @@ table DIM_DATE
 		mode: import
 		source =
 				let
-				    Source = Excel.Workbook(File.Contents("C:\Users\Bihaag Nepaul\Downloads\Lets+Build+It_Resource+Files\Lets Build It - Resource Files\Financial Sample.xlsx"), null, true),
+				    Source = Excel.Workbook(Web.Contents(Sharepoint_Dataset_URL), null, true),
 				    FACT_SALES_Table = Source{[Item="FACT_SALES",Kind="Table"]}[Data],
 				    #"Changed Type" = Table.TransformColumnTypes(FACT_SALES_Table,{{"Segment", type text}, {"Country", type text}, {"Product", type text}, {"Discount Band", type text}, {"Units Sold", type number}, {"Manufacturing Price", Int64.Type}, {"Sale Price", Int64.Type}, {"Gross Sales", type number}, {"Discounts", type number}, {" Sales", type number}, {"COGS", type number}, {"Profit", type number}, {"Date", type date}, {"Month Number", Int64.Type}, {"Month Name", type text}, {"Year", Int64.Type}, {"Manager ID", type text}}),
 				    #"Added Custom" = Table.AddColumn(#"Changed Type", "Custom", each Number.ToText([Month Number],"00")),
@@ -102,4 +102,6 @@ table DIM_DATE
 				    #"Inserted Quarter"
 
 	annotation PBI_ResultType = Table
+
+	annotation PBI_NavigationStepName = Navigation
 

@@ -10,7 +10,7 @@ annotation __PBI_TimeIntelligenceEnabled = 1
 
 annotation PBIDesktopVersion = 2.131.1203.0 (24.07)
 
-annotation PBI_QueryOrder = ["DIM_MANAGERS","FACT_SALES","DIM_DATE","LAST_REFRESHED","*Measures"]
+annotation PBI_QueryOrder = ["DIM_MANAGERS","FACT_SALES","DIM_DATE","LAST_REFRESHED","*Measures","Sharepoint_Dataset_URL"]
 
 annotation PBI_ProTooling = ["DevMode"]
 
