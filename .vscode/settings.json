@@ -1,0 +1,5 @@
+{
+    "github-actions.workflows.pinned.workflows": [
+        ".github/workflows/deploy_pbi_report.yml"
+    ]
+}
