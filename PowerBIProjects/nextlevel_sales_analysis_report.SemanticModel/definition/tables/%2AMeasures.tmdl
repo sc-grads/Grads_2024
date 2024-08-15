@@ -1,0 +1,228 @@
+table *Measures
+	lineageTag: 323ab375-2875-44e4-9e51-1ad1cdbfca5a
+
+	measure 'M_Date Selection' =
+			
+			FORMAT(MIN(DIM_DATE[Reporting Period]),"MMM/YY")&" - "& FORMAT(MAX(DIM_DATE[Reporting Period]),"MMM/YY")
+		lineageTag: 61a31817-b7b3-449d-ac73-9bd27fab984d
+
+	measure 'M_Date/Time Last Refreshed' =
+			
+			"Last Refreshed: "&FORMAT(VALUES(LAST_REFRESHED[Date Last Refreshed]),"mm.dd.yy")
+		lineageTag: 662cbfa8-7e45-4738-8866-21d5dee40751
+
+	measure 'M_Units Sold' =
+			
+			SUM(FACT_SALES[Units Sold])
+		formatString: #,0
+		lineageTag: f11f4d0b-b310-4ab2-83d2-3e26cccc05c8
+
+		changedProperty = FormatString
+
+	measure 'M_Units Sold CY' =
+			
+			CALCULATE(
+			    SUM(FACT_SALES[Units Sold]),
+			    DIM_DATE[Year Rank]="1"
+			    )
+		formatString: #,0
+		lineageTag: 9814180e-3590-4694-b932-105828e50b4b
+
+		changedProperty = FormatString
+
+	measure 'M_Units Sold PY' =
+			
+			CALCULATE(
+			    [M_Units Sold],
+			    DIM_DATE[Year Rank]="2"
+			    )
+		formatString: #,0
+		lineageTag: a4c7196c-7bc1-4d94-ba88-085664ec0d61
+
+		changedProperty = FormatString
+
+	measure 'M_Gross Sales' =
+			
+			SUM(FACT_SALES[Gross Sales])
+		formatString: \$#,0;(\$#,0);\$#,0
+		lineageTag: a3c80833-4559-4568-9788-5bd151a617bb
+
+		changedProperty = FormatString
+
+		annotation PBI_FormatHint = {"currencyCulture":"en-US"}
+
+	measure M_Discounts =
+			
+			SUM(FACT_SALES[Discounts])
+		formatString: \$#,0;(\$#,0);\$#,0
+		lineageTag: 14c7312e-41b0-475d-8736-935b7b4e4793
+
+		changedProperty = FormatString
+
+		annotation PBI_FormatHint = {"currencyCulture":"en-US"}
+
+	measure 'M_Net Sales' =
+			
+			SUM(FACT_SALES[Sales])
+		formatString: \$#,0;(\$#,0);\$#,0
+		lineageTag: 7467cd1d-ab1f-4a16-94f1-2eff25d3294b
+
+		changedProperty = FormatString
+
+		annotation PBI_FormatHint = {"currencyCulture":"en-US"}
+
+	measure 'M_Cost Of Goods' =
+			
+			SUM(FACT_SALES[COGs])
+		formatString: \$#,0;(\$#,0);\$#,0
+		lineageTag: 6ad79c92-744b-4ef2-a814-6b925a439340
+
+		changedProperty = FormatString
+
+		annotation PBI_FormatHint = {"currencyCulture":"en-US"}
+
+	measure M_Profit =
+			
+			[M_Net Sales]-[M_Cost Of Goods]
+		formatString: \$#,0;(\$#,0);\$#,0
+		lineageTag: 30c6d73b-2219-4d3f-964d-84f5aeb0c530
+
+		changedProperty = FormatString
+
+		annotation PBI_FormatHint = {"currencyCulture":"en-US"}
+
+	measure 'M_Profit CY' =
+			
+			CALCULATE(
+			    [M_Profit],
+			    DIM_DATE[Year Rank]="1"
+			)
+		formatString: \$#,0;(\$#,0);\$#,0
+		lineageTag: e2426ef4-714e-4fff-a6c5-6f79b778218f
+
+		changedProperty = FormatString
+
+	measure 'M_Profit PY' =
+			
+			CALCULATE(
+			    [M_Profit],
+			    DIM_DATE[Year Rank]="2"
+			    )
+		formatString: \$#,0;(\$#,0);\$#,0
+		lineageTag: 4d207270-9089-4fb6-ab63-9b9ddd7c17b7
+
+		changedProperty = FormatString
+
+	measure 'M_Profit YOY%' =
+			
+			IFERROR(
+			    CALCULATE(
+			        ([M_Profit CY]-([M_Profit PY])) / ABS([M_Profit PY]),
+			        ALL(DIM_DATE[Year])
+			        ),
+			    1)
+		formatString: 0%;-0%;0%
+		lineageTag: 12f7f77f-1e88-4e1a-8275-7787b1118762
+
+		changedProperty = FormatString
+
+	measure 'M_Profit YOY% Formatted' =
+			
+			"YOY: "&FORMAT([M_Profit YOY%],"00%")
+		lineageTag: 2ab79a9d-0e14-4b2d-b808-8477df69813d
+
+	measure 'M_Profit Margin' =
+			
+			IFERROR([M_Profit] / [M_Net Sales],0)
+		formatString: 0%;-0%;0%
+		lineageTag: cbd39dbc-01ae-4fd0-a899-a63d9ca4aa89
+
+		changedProperty = FormatString
+
+	measure 'M_Profit Margin Formatted' =
+			
+			IF(
+			    [M_Profit Margin]>0,
+			    "+"&FORMAT([M_Profit Margin],"0%"),
+			    FORMAT([M_Profit Margin],"0%")
+			    )
+		lineageTag: adf0361c-0943-4d81-becd-42506124a76a
+
+	measure 'M_100% Minus Profit Margin' =
+			
+			IFERROR(1-[M_Profit Margin],0)
+		formatString: 0%;-0%;0%
+		lineageTag: 6303c422-1533-4847-b212-034f8545af1e
+
+		changedProperty = FormatString
+
+	measure M_Transparent =
+			
+			"RGBA(255,255,255,0)"
+		lineageTag: e1096394-0523-40dc-bee9-7aefd18d79c1
+
+	measure 'M_# of Distinct Countries' =
+			
+			DISTINCTCOUNT(FACT_SALES[Country])
+		formatString: #,0
+		lineageTag: 5b10ac51-05b3-4800-ae48-a223f2c4b8d1
+
+		changedProperty = FormatString
+
+	measure 'M_# of Distinct Segments' =
+			
+			DISTINCTCOUNT(FACT_SALES[Segment])
+		formatString: #,0
+		lineageTag: 7f74a150-8f5d-4b35-8e33-1a54b6ffcdea
+
+		changedProperty = FormatString
+
+	measure 'M_User Greeting' =
+			
+			"Welcome " &SELECTEDVALUE(DIM_MANAGERS[First Name])&"!"
+		lineageTag: b8ef85e7-ddd2-4da4-95b0-ceded1a22e1c
+
+	measure M_Welcome_All = ```
+			
+			VAR Selected_User = SELECTEDVALUE(DIM_MANAGERS[Manager ID])
+			RETURN 
+			    IF(ISBLANK(Selected_User),"#fff",
+			    "RGBA(255,255,255,0)"
+			    )
+			```
+		lineageTag: 58db5356-81e7-4d29-98ff-5b5079e3ee24
+
+	measure 'M_Discount Band Colors' = ```
+			
+			    VAR High = IF(SELECTEDVALUE('FACT_SALES'[Discount Band])="High",True,False)
+			    VAR Medium = IF(SELECTEDVALUE('FACT_SALES'[Discount Band])="Medium",True,False)
+			    VAR Low = IF(SELECTEDVALUE('FACT_SALES'[Discount Band])="Low",True,False)
+			    VAR None = IF(SELECTEDVALUE('FACT_SALES'[Discount Band])="None",True,False)
+			    RETURN 
+			    SWITCH(TRUE(),
+			        High,"#e92f42",
+			        Medium,"#ffbe0b",
+			        Low,"#049570",
+			        None,"#808080",
+			        "#07345F"
+			        )
+			```
+		lineageTag: 6ccccc0c-8d7c-4bc4-8bd0-7cc56e8f39a6
+
+	measure 'M_User Greeting HElp' =
+			
+			"Hello " &SELECTEDVALUE(DIM_MANAGERS[First Name])&"! Click the links below if you need any help or send me an email!"
+		lineageTag: 9e5322ab-df84-4f46-aedc-b43a53b8f68d
+
+	partition *Measures-07850df5-948c-4533-9adc-c30d353d7806 = m
+		mode: import
+		source =
+				let
+				    Source = Table.FromRows(Json.Document(Binary.Decompress(Binary.FromText("i44FAA==", BinaryEncoding.Base64), Compression.Deflate)), let _t = ((type nullable text) meta [Serialized.Text = true]) in type table [Column1 = _t]),
+				    #"Changed Type" = Table.TransformColumnTypes(Source,{{"Column1", type text}}),
+				    #"Removed Columns" = Table.RemoveColumns(#"Changed Type",{"Column1"})
+				in
+				    #"Removed Columns"
+
+	annotation PBI_ResultType = Table
+

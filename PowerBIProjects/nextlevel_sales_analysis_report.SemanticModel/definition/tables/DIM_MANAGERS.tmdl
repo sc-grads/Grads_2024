@@ -1,0 +1,65 @@
+table DIM_MANAGERS
+	lineageTag: 63acb6e3-9047-43da-b894-7f930d313cb6
+
+	column 'Manager ID'
+		dataType: string
+		lineageTag: 28854490-cb44-4a95-81c5-2f0782a7f267
+		summarizeBy: none
+		sourceColumn: Manager ID
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Manager Name'
+		dataType: string
+		lineageTag: d0b61737-cc50-4e08-a5d5-361f77b7670f
+		summarizeBy: none
+		sourceColumn: Manager Name
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'First Name'
+		dataType: string
+		lineageTag: 0474a5f7-f171-4406-a1a3-ca4ebb3108d2
+		summarizeBy: none
+		sourceColumn: First Name
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Last Name'
+		dataType: string
+		lineageTag: 3066a497-d412-48f5-a7a4-be5359dd511b
+		summarizeBy: none
+		sourceColumn: Last Name
+
+		annotation SummarizationSetBy = Automatic
+
+	column Territory
+		dataType: string
+		lineageTag: 344ccd49-93df-4c89-bc5b-06b8d6d7e46f
+		summarizeBy: none
+		sourceColumn: Territory
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Image URL'
+		dataType: string
+		lineageTag: 808607b6-8536-4ea9-a716-3c9da0c98f59
+		summarizeBy: none
+		sourceColumn: Image URL
+
+		annotation SummarizationSetBy = Automatic
+
+	partition DIM_MANAGERS-49443fdb-2a90-49ab-9195-dcee43c31daa = m
+		mode: import
+		source =
+				let
+				    Source = Excel.Workbook(Web.Contents(Sharepoint_Dataset_URL), null, true),
+				    DIM_MANAGERS_Table = Source{[Item="DIM_MANAGERS",Kind="Table"]}[Data],
+				    #"Changed Type" = Table.TransformColumnTypes(DIM_MANAGERS_Table,{{"Manager ID", type text}, {"Manager Name", type text}, {"First Name", type text}, {"Last Name", type text}, {"Territory", type text}, {"Image URL", type text}})
+				in
+				    #"Changed Type"
+
+	annotation PBI_ResultType = Table
+
+	annotation PBI_NavigationStepName = Navigation
+
