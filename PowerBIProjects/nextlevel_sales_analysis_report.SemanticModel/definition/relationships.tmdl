@@ -1,0 +1,18 @@
+relationship 8a19699c-471f-4102-b53d-ab0f46cb3e16
+	joinOnDateBehavior: datePartOnly
+	fromColumn: DIM_DATE.'Reporting Period'
+	toColumn: LocalDateTable_f87fa9e8-7d25-425d-b169-ecb331113ac9.Date
+
+relationship 0b71b2a1-164d-47b6-9823-8239d8ce6515
+	joinOnDateBehavior: datePartOnly
+	fromColumn: LAST_REFRESHED.'Date Last Refreshed'
+	toColumn: LocalDateTable_aafb8865-c8d0-4d5e-8c22-8037cf2edd5a.Date
+
+relationship f5910723-e41e-4e73-bc72-2108ee1ecc6f
+	fromColumn: FACT_SALES.YearMonth
+	toColumn: DIM_DATE.YearMonth
+
+relationship c4e136fa-a0df-429e-9415-cddf627e6117
+	fromColumn: FACT_SALES.'Manager ID'
+	toColumn: DIM_MANAGERS.'Manager ID'
+
