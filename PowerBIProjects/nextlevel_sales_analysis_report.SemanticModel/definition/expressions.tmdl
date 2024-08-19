@@ -1,7 +1,0 @@
-expression Sharepoint_Dataset_URL = "https://northerndata.sharepoint.com/sites/TheChosenOnes/Shared%20Documents/General/Data/Financial%20Sample.xlsx" meta [IsParameterQuery=true, Type="Text", IsParameterQueryRequired=true]
-	lineageTag: 0d109734-3b5b-44ce-8da6-2494fb4504b7
-
-	annotation PBI_NavigationStepName = Navigation
-
-	annotation PBI_ResultType = Text
-
