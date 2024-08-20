@@ -1,9 +1,0 @@
-{
-  "version": "4.0",
-  "datasetReference": {
-    "byPath": {
-      "path": "../nextlevel_sales_analysis_report.SemanticModel"
-    },
-    "byConnection": null
-  }
-}
