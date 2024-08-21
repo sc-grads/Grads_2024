@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "Report",
+    "displayName": "nextlevel_sales_analysis_report"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "d5369938-f63b-42bb-b8cc-711e81b2fac4"
+  }
+}
