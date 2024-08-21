@@ -8,7 +8,7 @@ model Model
 
 annotation __PBI_TimeIntelligenceEnabled = 1
 
-annotation PBIDesktopVersion = 2.131.1203.0 (24.07)
+annotation PBIDesktopVersion = 2.132.908.0 (24.08)
 
 annotation PBI_QueryOrder = ["DIM_MANAGERS","FACT_SALES","DIM_DATE","LAST_REFRESHED","*Measures","Sharepoint_Dataset_URL"]
 
