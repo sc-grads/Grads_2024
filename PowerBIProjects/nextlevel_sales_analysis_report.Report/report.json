@@ -2145,7 +2145,17 @@
       "height": 720.00,
       "name": "9e31801216a2ef3fa608",
       "ordinal": 11,
-      "visualContainers": [],
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"64ba9bd8f92bb5dfa1e1\",\"layouts\":[{\"id\":0,\"position\":{\"x\":72.51646903820816,\"y\":143.34650856389985,\"z\":0,\"width\":1131.5942028985507,\"height\":484.00527009222657,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"columnChart\",\"projections\":{\"Y\":[{\"queryRef\":\"*Measures.M_Units Sold\"}],\"Category\":[{\"queryRef\":\"DIM_DATE.Reporting Period\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"*\",\"Entity\":\"*Measures\",\"Type\":0},{\"Name\":\"d\",\"Entity\":\"DIM_DATE\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"*\"}},\"Property\":\"M_Units Sold\"},\"Name\":\"*Measures.M_Units Sold\",\"NativeReferenceName\":\"Units Sold\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"Reporting Period\"},\"Name\":\"DIM_DATE.Reporting Period\",\"NativeReferenceName\":\"Reporting Period\"}],\"OrderBy\":[{\"Direction\":1,\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"Reporting Period\"}}}]},\"columnProperties\":{\"*Measures.M_Units Sold\":{\"displayName\":\"Units Sold\"}},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
+          "filters": "[]",
+          "height": 484.01,
+          "width": 1131.59,
+          "x": 72.52,
+          "y": 143.35,
+          "z": 0.00
+        }
+      ],
       "width": 1280.00
     },
     {
